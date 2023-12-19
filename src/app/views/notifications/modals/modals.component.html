@@ -1,0 +1,131 @@
+<c-row>
+  <c-col xs="12">
+    <app-docs-callout href="components/modal" name="Modal"></app-docs-callout>
+  </c-col>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Angular Modal</strong>
+      </c-card-header>
+      <c-card-body>
+        <c-row>
+        <c-col sm="6" xl="3" >
+          <div class="clearfix">
+            <!-- <button cButton color="light" variant="outline">  
+              
+              <img cImg  height="200" rounded src="https://picsum.photos/200/300" width="200" /></button>
+          -->
+          <button [cModalToggle]="scrollableLongContentModal.id" cButton color="light" variant="outline"> <img cImg  height="200" rounded src="https://picsum.photos/200/300" width="200" /></button>
+
+        <c-modal #scrollableLongContentModal id="scrollableLongContentModal" scrollable>
+          <c-modal-header>
+            <h5 cModalTitle>Modal title</h5>
+            <button [cModalToggle]="scrollableLongContentModal.id" cButtonClose></button>
+          </c-modal-header>
+          <c-modal-body>
+            <ng-container *ngTemplateOutlet="longContent"></ng-container>
+          </c-modal-body>
+          <c-modal-footer>
+            <button [cModalToggle]="scrollableLongContentModal.id" cButton color="secondary">
+              Close
+            </button>
+            <button cButton color="primary">Save changes</button>
+          </c-modal-footer>
+        </c-modal>
+        
+        <ng-template #longContent>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+            lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+            auctor fringilla.
+          </p>
+        </ng-template> 
+          </div>    
+       
+        </c-col>
+</c-row>
+
+        
+
+
+
+      </c-card-body>
+    </c-card>
+  </c-col>
+
+</c-row>
+
+<!--  -->

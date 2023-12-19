@@ -1,0 +1,14 @@
+<c-callout class="bg-white:dark:bg-transparent" color="info">
+  <ng-container *ngTemplateOutlet="default"></ng-container>
+</c-callout>
+
+<ng-template #default>
+  <p *ngIf="!!name">
+WRITE ABOUT YOUR WEBSITE WHY YOU SHOULD JOIN US
+  </p>
+
+  <ng-content></ng-content>
+
+  <br>
+  For more information please visit our official <a href="{{href}}" target="_blank">Your linkdin or insta or any URL for more info.</a>
+</ng-template>

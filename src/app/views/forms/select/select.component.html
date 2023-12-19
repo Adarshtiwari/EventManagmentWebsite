@@ -1,0 +1,85 @@
+<c-row ngPreserveWhitespaces>
+  <c-col xs="12">
+    <app-docs-callout href="forms/select" name="Form Select"></app-docs-callout>
+  </c-col>
+  <c-col xs="12">
+   
+      <c-card-header>
+        <strong>Angular Select</strong> <small>Default</small>
+      </c-card-header>
+      <c-card-body>
+        <table
+        [hover]="true"
+        [responsive]="true"
+        [striped]="true"
+        align="middle"
+        cTable
+        class="mb-0 border"
+      >
+        <thead cTableColor="light">
+          <tr>
+          <th>S.NO</th>
+            <th>User</th>
+            <th class="text-center">state</th>
+            <th>total class</th>
+            <!-- <th class="text-center">Payment Method</th> -->
+            <th>next session</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users; index as i">
+            <td class="text-center">
+          <span>{{i+1}}</span>
+            </td>
+            <td>
+              <div>{{ user.name }}</div>
+              <div class="small text-medium-emphasis text-nowrap">
+                <span>
+                  {{ user.state }} | Registered: {{ user.registered }}
+                </span>
+              </div>
+            </td>
+            <td class="text-center">
+              <!-- <svg
+                cIcon
+                id="{{ user.country + user.name }}"
+                name="cif{{ user.country }}"
+                size="xl"
+                title="{{ user.country }}"
+              ></svg> -->
+              <span>{{ user.country }}</span>
+            </td>
+            <td>
+              <div class="d-flex justify-content-between">
+                <div class="float-start">
+                  <strong>{{ user.usage }}%</strong>
+                </div>
+                <div class="float-end ms-1 text-nowrap">
+                  <small class="text-medium-emphasis">
+                    {{ user.period }}
+                  </small>
+                </div>
+              </div>
+              <c-progress thin>
+                <c-progress-bar
+                  [value]="user.usage"
+                  color="{{ user.color }}"
+                ></c-progress-bar>
+              </c-progress>
+            </td>
+            <!-- <td class="text-center">
+              <svg cIcon name="cibCc{{ user.payment }}" size="xl"></svg>
+            </td> -->
+            <td>
+              <div class="small text-medium-emphasis">Last login</div>
+              <div class="fw-semibold text-nowrap">{{ user.activity }}</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </c-card-body>
+   
+  </c-col>
+
+</c-row>
+

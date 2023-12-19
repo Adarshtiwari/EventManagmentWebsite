@@ -1,0 +1,44 @@
+<c-container breakpoint="sm">
+<c-row >
+  <c-col sm="12" >
+
+    
+    <div *ngIf="loading; else content">
+      <!-- Show loading indicator here -->
+      Loading...
+    </div>
+
+    <ng-template #content>
+      <!-- Show content when data is loaded -->
+      <c-carousel [dark]="true" [wrap]="false">
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slideArray; index as i;">
+            <img
+              [src]="slide.src"
+              alt="{{slide.title}}"
+              class="d-block w-100 h-12 img-fluid"
+              loading="lazy"
+              style="height:400px ;"
+            />
+            <c-carousel-caption class="d-none d-md-block">
+              <h3>{{slide.title}}</h3>
+              <p>{{slide.subtitle}}</p>
+            </c-carousel-caption>
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel>
+    </ng-template>
+
+
+
+<div>
+  
+</div>
+
+
+</c-col>
+</c-row>
+</c-container>

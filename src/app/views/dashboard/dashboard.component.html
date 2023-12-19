@@ -1,0 +1,291 @@
+<app-widgets-dropdown></app-widgets-dropdown>
+
+
+
+<c-card class="mb-4">
+  <c-card-body>
+    <c-row>
+      <c-alert [(visible)]="visible"
+         [dismissible]="dismissible"
+         color="warning"
+         fade
+         *ngIf="visible">
+  <strong>Go right ahead</strong> successfully save data .
+    </c-alert>
+
+    <c-alert [(visible)]="visibleerror"
+    [dismissible]="dismissibleerror"
+    color="danger"
+    fade
+    *ngIf="visible">
+<strong>Go right ahead</strong> {{sucessmsg}}
+</c-alert>
+      <c-card-header><h2>Enquire For Event</h2></c-card-header>
+    <form cForm [formGroup]="myForm">
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">Full Name</label>
+        <input cFormControl
+               id="name"
+               placeholder="First Name    Last Name"
+               type="text"
+               formControlName="name"
+        />
+      </div>
+
+
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">Email address</label>
+        <input cFormControl
+               id="email"
+               placeholder="name@example.com"
+               type="email"
+               formControlName="email"
+        />
+      </div>
+
+
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">PhoneNumber</label>
+        <input cFormControl
+               id="phonenumber"
+               placeholder="phone number"
+               type="text"
+               formControlName="phonenumber"
+        />
+      </div>
+
+
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">address</label>
+        <input cFormControl
+               id="address"
+               placeholder="address"
+               type="text"
+               formControlName="address"
+        />
+      </div>
+
+      
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">pincode</label>
+        <input cFormControl
+               id="pincode"
+               placeholder="pincode"
+               type="number"
+               formControlName="pincode"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlInput1">date</label>
+        <input cFormControl
+               id="date"
+               placeholder="date"
+               type="text"
+               formControlName="date"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label cLabel for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea cFormControl id="aboutevent" rows="3" formControlName="aboutevent"></textarea>
+      </div>
+
+      
+      <!-- <div class="mb-3">
+        <c-row>
+      
+        </c-row>
+      </div> -->
+      <div class="mb-3">
+        <button cButton color="primary"  (click)="onSubmit()">Submit</button>
+      </div>
+    </form>
+    </c-row>
+  </c-card-body>
+
+<!-- 
+  <c-card-footer>
+    <c-row class="text-center" [md]="5" [xs]="1">
+      <c-col class="mb-sm-2 mb-0">
+        <div class="text-medium-emphasis">Visits</div>
+        <strong>29.703 Users (40%)</strong>
+        <c-progress class="mt-2" thin>
+          <c-progress-bar color="success" value="40"></c-progress-bar>
+        </c-progress>
+      </c-col>
+      <c-col class="mb-sm-2 mb-0">
+        <div class="text-medium-emphasis">Unique</div>
+        <strong>24.093 Users (20%)</strong>
+        <c-progress class="mt-2" thin>
+          <c-progress-bar color="info" value="20"></c-progress-bar>
+        </c-progress>
+      </c-col>
+      <c-col class="mb-sm-2 mb-0">
+        <div class="text-medium-emphasis">Page views</div>
+        <strong>78.706 Views (60%)</strong>
+        <c-progress class="mt-2" thin>
+          <c-progress-bar color="warning" value="60"></c-progress-bar>
+        </c-progress>
+      </c-col>
+      <c-col class="mb-sm-2 mb-0">
+        <div class="text-medium-emphasis">New Users</div>
+        <strong>22.123 Users (80%)</strong>
+        <c-progress class="mt-2" thin>
+          <c-progress-bar color="danger" value="80"></c-progress-bar>
+        </c-progress>
+      </c-col>
+      <c-col class="mb-sm-2 mb-0">
+        <div class="text-medium-emphasis">Bounce Rate</div>
+        <strong>Average Rate (40.15%)</strong>
+        <c-progress class="mt-2" thin>
+          <c-progress-bar value="40"></c-progress-bar>
+        </c-progress>
+      </c-col>
+    </c-row>
+  </c-card-footer> -->
+
+
+
+</c-card>
+
+<!-- <app-widgets-brand [withCharts]="true"></app-widgets-brand> -->
+<app-modals></app-modals>
+
+<c-row>
+  <c-col xs>
+    <c-card class="mb-4">
+      <c-card-header>Traffic {{ "&" }} Sales</c-card-header>
+      <c-card-body>
+        <c-row>
+          <c-col md="6" xl="6" xs="12">
+            <c-row>
+              <c-col sm="6">
+                <div
+                
+                >
+                <select aria-label="Default select example" cSelect>
+                  <option>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                </div>
+              </c-col>
+      
+            </c-row>
+
+            <hr class="mt-0" />
+
+        <div *ngIf="true">
+          <div class="progress-group mb-4" *ngFor="let user of [1,2,3]; index as i">
+            <!-- <div class="progress-group-prepend">
+              <span class="text-medium-emphasis small">Monday</span>
+            </div> -->
+           <button cButton color="link"><svg cIcon name="cil-cloud-download" size="xl" title="Paper Plane Icon"></svg>paper {{user}}</button>   
+            <!-- <div class="progress-group-bars">
+              <c-progress thin>
+                <c-progress-bar color="info" value="34"></c-progress-bar>
+              </c-progress>
+              <c-progress thin>
+                <c-progress-bar color="danger" value="78"></c-progress-bar>
+              </c-progress>
+            </div> -->
+          </div>
+       
+        </div>
+          
+          
+          
+          </c-col>
+
+    
+        </c-row>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+<c-row>
+  <c-col xs>
+    <c-card class="mb-4">
+      <c-card-header>Users</c-card-header>
+      <c-card-body>
+        <table
+          [hover]="true"
+          [responsive]="true"
+          [striped]="true"
+          align="middle"
+          cTable
+          class="mb-0 border"
+        >
+          <thead cTableColor="light">
+            <tr>
+              <th class="text-center">
+                <svg cIcon name="cilPeople"></svg>
+              </th>
+              <th>User</th>
+              <th class="text-center">state</th>
+              <th>total class</th>
+              <!-- <th class="text-center">Payment Method</th> -->
+              <th>next session</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; index as i">
+              <td class="text-center">
+                <c-avatar
+                  size="md"
+                  src="{{ user.avatar }}"
+                  status="{{ user.status }}"
+                ></c-avatar>
+              </td>
+              <td>
+                <div>{{ user.name }}</div>
+                <div class="small text-medium-emphasis text-nowrap">
+                  <span>
+                    {{ user.state }} | Registered: {{ user.registered }}
+                  </span>
+                </div>
+              </td>
+              <td class="text-center">
+                <!-- <svg
+                  cIcon
+                  id="{{ user.country + user.name }}"
+                  name="cif{{ user.country }}"
+                  size="xl"
+                  title="{{ user.country }}"
+                ></svg> -->
+                <span>{{ user.country }}</span>
+              </td>
+              <td>
+                <div class="d-flex justify-content-between">
+                  <div class="float-start">
+                    <strong>{{ user.usage }}%</strong>
+                  </div>
+                  <div class="float-end ms-1 text-nowrap">
+                    <small class="text-medium-emphasis">
+                      {{ user.period }}
+                    </small>
+                  </div>
+                </div>
+                <c-progress thin>
+                  <c-progress-bar
+                    [value]="user.usage"
+                    color="{{ user.color }}"
+                  ></c-progress-bar>
+                </c-progress>
+              </td>
+              <!-- <td class="text-center">
+                <svg cIcon name="cibCc{{ user.payment }}" size="xl"></svg>
+              </td> -->
+              <td>
+                <div class="small text-medium-emphasis">Last login</div>
+                <div class="fw-semibold text-nowrap">{{ user.activity }}</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>

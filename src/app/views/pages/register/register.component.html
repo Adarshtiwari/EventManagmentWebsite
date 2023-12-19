@@ -1,0 +1,76 @@
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <c-container>
+    <c-row class="justify-content-center">
+      <c-col lg="7" md="9" xl="6">
+        <c-card class="mx-4">
+          <c-card-body class="p-4">
+          
+            <form cForm class="row g-3">
+              <h1>Register</h1>
+              <c-col [md]="6">
+                <label cLabel for="inputEmail4">Email</label>
+                <input cFormControl id="inputEmail4" type="email" />
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="inputPassword4">Password</label>
+                <input cFormControl id="inputPassword4" type="password" />
+              </c-col>
+              <c-col [xs]="12">
+                <label cLabel for="inputAddress">Address</label>
+                <input cFormControl id="inputAddress" placeholder="1234 Main St" />
+              </c-col>
+              <c-col [xs]="12">
+                <label cLabel for="inputAddress2">Address 2</label>
+                <input cFormControl id="inputAddress2" placeholder="Apartment, studio, or floor" />
+              </c-col>
+              <c-col [md]="5">
+                <label cLabel for="inputCity">City</label>
+                <input cFormControl id="inputCity" />
+              </c-col>
+              <c-col [md]="4">
+                <label cLabel for="inputState">State</label>
+                <select cSelect id="inputState">
+                  <option>Choose...</option>
+                  <option>...</option>
+                </select>
+              </c-col>
+              <c-col [md]="3">
+                <label cLabel for="inputZip">Zip</label>
+                <input cFormControl id="inputZip" />
+              </c-col>
+            
+
+              <c-col [md]="12">
+                <c-form-check>
+                  <input cFormCheckInput type="radio" value="one" name="flexRadioDefault" />
+                  <label cFormCheckLabel>Student</label>
+                </c-form-check>
+                <c-form-check>
+                  <input cFormCheckInput type="radio" value="two" name="flexRadioDefault" checked/>
+                  <label cFormCheckLabel>professional</label>
+                </c-form-check>
+              </c-col>
+              
+              <!-- <c-col [xs]="12"> -->
+                <c-col [md]="4">
+                <button cButton type="submit">Sign up</button>
+
+                <!-- <button cButton type="submit">Sign up</button> -->
+                </c-col>
+                <c-col [md]="5">
+                  <label >already account then Please do Login</label>
+                </c-col>
+                <c-col [md]="3">
+                  <button cButton type="submit" routerLink="/login">Login</button>
+                  </c-col>
+              <!-- </c-col> -->
+
+              
+            </form>
+
+          </c-card-body>
+        </c-card>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>

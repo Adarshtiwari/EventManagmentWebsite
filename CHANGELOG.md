@@ -1,4 +1,4 @@
-### [coreui-free-angular-admin-template](https://coreui.io/angular/) changelog
+### [Event-Management](https://coreui.io/angular/) changelog
 
 ---
 

@@ -3,12 +3,13 @@
   <c-col sm="12" >
 
     
-    <div *ngIf="loading; else content">
-      <!-- Show loading indicator here -->
+    <!-- <div *ngIf="loading; else content">
+  
       Loading...
-    </div>
+    </div> -->
 
-    <ng-template #content>
+    <!-- <ng-template #content> -->
+   
       <!-- Show content when data is loaded -->
       <c-carousel [dark]="true" [wrap]="false">
         <c-carousel-indicators></c-carousel-indicators>
@@ -19,7 +20,7 @@
               alt="{{slide.title}}"
               class="d-block w-100 h-12 img-fluid"
               loading="lazy"
-              style="height:400px ;"
+              style="height:400px;width: auto;"
             />
             <c-carousel-caption class="d-none d-md-block">
               <h3>{{slide.title}}</h3>
@@ -30,7 +31,7 @@
         <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
         <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
       </c-carousel>
-    </ng-template>
+    <!-- </ng-template> -->
 
 
 

@@ -1,21 +1,21 @@
-<c-row>
+<c-row >
   <c-col xs="12">
-    <app-docs-callout href="components/modal" name="Modal"></app-docs-callout>
+    <!-- <app-docs-callout href="components/modal" name="Modal"></app-docs-callout> -->
   </c-col>
-  <c-col xs="12">
+  <c-col xs="12" >
     <c-card class="mb-4">
       <c-card-header>
-        <strong>Angular Modal</strong>
+        <strong>Click for About US</strong>
       </c-card-header>
-      <c-card-body>
-        <c-row>
+      <c-card-body style="background-color:cornsilk;">
+        <c-row class="justify-content-around">
         <c-col sm="6" xl="3" >
           <div class="clearfix">
             <!-- <button cButton color="light" variant="outline">  
               
               <img cImg  height="200" rounded src="https://picsum.photos/200/300" width="200" /></button>
           -->
-          <button [cModalToggle]="scrollableLongContentModal.id" cButton color="light" variant="outline"> <img cImg  height="200" rounded src="https://picsum.photos/200/300" width="200" /></button>
+          <button [cModalToggle]="scrollableLongContentModal.id" cButton color="light" variant="outline"> <img cImg  height="200" rounded src="./assets/logo-white.png" width="200" /></button>
 
         <c-modal #scrollableLongContentModal id="scrollableLongContentModal" scrollable>
           <c-modal-header>
@@ -29,92 +29,49 @@
             <button [cModalToggle]="scrollableLongContentModal.id" cButton color="secondary">
               Close
             </button>
-            <button cButton color="primary">Save changes</button>
+            <!-- <button cButton color="primary">Save changes</button> -->
           </c-modal-footer>
         </c-modal>
         
         <ng-template #longContent>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          <h2>About Us</h2>
+        <p>  Welcome to Alka Event management where memorable events come to life!</p>
+          
+     <h2> Our Mission</h2>
+    <p> At ALKA Event Managemnet, our mission is to transform ordinary events into extraordinary experiences. We believe that every occasion is an opportunity to create lasting memories, and our dedicated team is passionate about making your vision a reality.
           </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-            lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </p>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-            auctor fringilla.
-          </p>
+          <h2>Who We Are</h2>
+        <p> Founded [Year], we are a dynamic team of event enthusiasts with a collective passion for creativity and precision. From intimate gatherings to grand celebrations, we specialize in crafting events that leave a lasting impression.
+      </p>
+        <h2>Our Approach </h2>
+      <p>  Creativity: We thrive on turning ideas into immersive experiences. Our creative team is committed to pushing boundaries, thinking outside the box, and delivering events that captivate and inspire.
+   
+          Detail-Oriented: Every detail matters, and our meticulous planning ensures that no element is overlooked. From venue selection to the final moments of your event, we are dedicated to perfection.
+          
+          Client-Centric: Your satisfaction is our priority. We work closely with our clients, understanding their unique needs and preferences to tailor events that reflect their personality and style.
+        </p>   
+        <h2> Why Choose ALKA Event Managemnet </h2>
+        <p>   Experience: With [Number] years of experience in the industry, we have successfully executed a diverse range of events. Our portfolio includes weddings, corporate functions, conferences, and everything in between.
+          
+          Professional Team: Our team comprises seasoned professionals with expertise in event planning, design, logistics, and coordination. We collaborate seamlessly to ensure the flawless execution of your event.
+          
+          Innovation: Staying ahead of trends, we embrace innovation in technology, design, and event management practices. This allows us to offer cutting-edge solutions and deliver events that stand out.
+          
+          Let's Create Something Extraordinary Together!
+          Whether you're planning a wedding, corporate event, or a special celebration, ALKA Event Managemnet is here to turn your vision into reality. We are excited to embark on this journey with you, creating moments that will be cherished for a lifetime.
+          
+          Contact us today to discuss your upcoming event and let us bring your ideas to life!
+          
+          [Contact Information]
+        </p> 
         </ng-template> 
+
+        
           </div>    
        
+        </c-col>
+        <c-col sm="6" xl="12" >
+          At Welcome to Alka Event management , we specialize in turning dreams into reality. Whether you're planning a wedding, corporate gathering, or a special celebration, our team of dedicated professionals is here to make your event truly exceptional.
         </c-col>
 </c-row>
 

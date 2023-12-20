@@ -128,46 +128,41 @@ this.slideArray=[]
  Imagedata=[]
 
     this.setData();
-    // this.slides[0] = {
-    //   id: 0,
-    //   src: 'https://picsum.photos/200/300',
-    //   title: 'First slide',
-    //   subtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
-    // };
-     this.service.fetchALLEventDataData().subscribe(
-      (data) => {
-        // Access the global variable here
+ 
+  //    this.service.fetchALLEventDataData().subscribe(
+  //     (data) => {
+  //       // Access the global variable here
        
-        console.log('Inside subscription:', data);
-        console.log(" the slideArray ",data.data[0].Image)
-        for(let i=0;i<data.data.length;i++)
-        {
-        Imagedata.push(data.data[i].Image)
-        }
+  //       console.log('Inside subscription:', data);
+  //       console.log(" the slideArray ",data.data[0].Image)
+  //       for(let i=0;i<data.data.length;i++)
+  //       {
+  //       Imagedata.push(data.data[i].Image)
+  //       }
        
-        for(let i=0;i<Imagedata.length;i++)
-        {
+  //       for(let i=0;i<Imagedata.length;i++)
+  //       {
        
-          for(let j=0;j<Imagedata[i].length;j++)
-          {
-            console.log(" in the image array ",Imagedata)
-          this.slideArray.push( {
-            "id": i,
-            "src": Imagedata[i][j],
-            "title": "BirthDay",
-            "subtitle": "testing _testing"
-        })
+  //         for(let j=0;j<Imagedata[i].length;j++)
+  //         {
+  //           console.log(" in the image array ",Imagedata)
+  //         this.slideArray.push( {
+  //           "id": i,
+  //           "src": Imagedata[i][j],
+  //           "title": "BirthDay",
+  //           "subtitle": "testing _testing"
+  //       })
    
-          }
-        }
-        this.loading = false;
-  console.log(this.slideArray)
+  //         }
+  //       }
+  //       this.loading = false;
+  // console.log(this.slideArray)
     
-      },
-      (error) => {
-        console.error('Error in subscription:', error);
-      }
-       )
+  //     },
+  //     (error) => {
+  //       console.error('Error in subscription:', error);
+  //     }
+  //      )
 
     // this.slides= 
     //   {
@@ -177,12 +172,28 @@ this.slideArray=[]
     //       "subtitle": "testing _testing"
     //   }
   
-    //   this.slideArray=  [ {
-    //     "id": 0,
-    //     "src": "https://s3.amazonaws.com/eventwebsiteimages/95ed57ce-3e31-4d2a-be04-ae89dd705113",
-    //     "title": "BirthDay",
-    //     "subtitle": "testing _testing"
-    // }]
+      this.slideArray=  [ {
+        "id": 0,
+        "src": "./assets/images/birthday3.jpg",
+        "title": "BirthDay",
+        "subtitle": "Birthday celebration Customise price "
+    },
+  
+  {
+    "id": 1,
+    "src": "./assets/images/wedding3.jpg",
+    "title": "wedding Decoration",
+    "subtitle": "wedding full decoration 30K Rupess"
+},
+
+{
+  "id": 3,
+  "src": "./assets/images/babyshower.jpg",
+  "title": "Baby Shower",
+  "subtitle": "Baby Shower Customise Price"
+},
+
+  ]
   }
 
   ngAfterContentInit(): void {

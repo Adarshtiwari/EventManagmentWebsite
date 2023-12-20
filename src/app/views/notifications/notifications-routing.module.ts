@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Notifications'
+      title: 'Aboutus'
     },
     children: [
       {
@@ -33,10 +33,10 @@ const routes: Routes = [
         }
       },
       {
-        path: 'modal',
+        path: 'company',
         component: ModalsComponent,
         data: {
-          title: 'Modal'
+          title: 'Company'
         }
       },
       {

@@ -35,82 +35,58 @@ export class DashboardComponent implements OnInit {
   public users: IUser[] = [
     {
       name: 'Adarsh Tiwari',
-      state: 'New',
+      state: '2year Exprience',
       registered: 'Jan 1, 2021',
       country: 'indore',
       usage: 50,
       period: 'Jun 11, 2021 - Jul 10, 2021',
-      payment: 'Mastercard',
-      activity: '10 sec ago',
-      avatar: './assets/img/avatars/1.jpg',
-      status: 'success',
-      color: 'success'
+      payment: '+91 7805824855',
+      activity: 'IT enginner,working as Part time',
+      avatar: './assets/img/avatars/face1.jpg',
+      status: 'Birthday Party, baby Shower',
+      color: 'success',
+    
     },
     {
-      name: 'Avram Tarasios',
-      state: 'Recurring ',
-      registered: 'Jan 1, 2021',
-      country: 'mhow',
+      name: 'yogesh patel',
+      state: '2year Exprience',
+      registered: 'march 19, 2021',
+      country: 'indore',
       usage: 10,
       period: 'Jun 11, 2021 - Jul 10, 2021',
       payment: 'Visa',
-      activity: '5 minutes ago',
-      avatar: './assets/img/avatars/2.jpg',
-      status: 'danger',
-      color: 'info'
+      activity: 'Full time Event Management',
+      avatar: './assets/img/avatars/face2.jpg',
+      status: 'Wedding Decoration, baby Shower',
+      color: 'success'
     },
     {
-      name: 'Quintin Ed',
-      state: 'New',
-      registered: 'Jan 1, 2021',
+      name: 'Rohan Surathwale',
+      state: '1year Exprience',
+      registered: 'feb 12, 2022',
       country: 'Pithampur',
       usage: 74,
       period: 'Jun 11, 2021 - Jul 10, 2021',
       payment: 'Stripe',
-      activity: '1 hour ago',
-      avatar: './assets/img/avatars/3.jpg',
-      status: 'warning',
-      color: 'warning'
+      activity: 'Teacher ,working as Part time',
+      avatar: './assets/img/avatars/face3.jpg',
+      status: 'Wedding Decoration, corporate gathering',
+      color: 'success'
     },
     {
-      name: 'Enéas Kwadwo',
-      state: 'Sleep',
-      registered: 'Jan 1, 2021',
+      name: 'mohit Rathore',
+      state: 'new',
+      registered: 'sept 1, 2023',
       country: 'bhopal',
-      usage: 98,
+      usage: 6,
       period: 'Jun 11, 2021 - Jul 10, 2021',
       payment: 'Paypal',
-      activity: 'Last month',
-      avatar: './assets/img/avatars/4.jpg',
-      status: 'secondary',
-      color: 'danger'
+      activity: 'IT enginner,working as Part time',
+      avatar: './assets/img/avatars/face4.jpg',
+      status: 'Birthday Party',
+      color: 'success'
     },
-    {
-      name: 'Agapetus Tadeáš',
-      state: 'New',
-      registered: 'Jan 1, 2021',
-      country: 'sagar',
-      usage: 22,
-      period: 'Jun 11, 2021 - Jul 10, 2021',
-      payment: 'ApplePay',
-      activity: 'Last week',
-      avatar: './assets/img/avatars/5.jpg',
-      status: 'success',
-      color: 'primary'
-    },
-    {
-      name: 'Friderik Dávid',
-      state: 'New',
-      registered: 'Jan 1, 2021',
-      country: 'pune',
-      usage: 43,
-      period: 'Jun 11, 2021 - Jul 10, 2021',
-      payment: 'Amex',
-      activity: 'Yesterday',
-      avatar: './assets/img/avatars/6.jpg',
-      status: 'info',
-      color: 'dark'
-    }
+ 
   ];
 
   public mainChart: IChartProps = {};

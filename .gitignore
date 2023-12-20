@@ -39,7 +39,7 @@ chrome-profiler-events*.json
 /libpeerconnection.log
 testem.log
 /typings
-src/app/Constant.ts
+# src/app/Constant.ts
 # System files
 .DS_Store
 Thumbs.db
